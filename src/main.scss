@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+@import "_mobilequeries";
+
+*,
+*::after,
+*::before {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$main-color: #664efc;
+$sub-main-color: #4c42fb;
+$dark-color: #000000;
+$gray-color: #6b6b6b;
+$white-color: #ffffff;
+
+@mixin container-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@mixin grid-system {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+/* General Stylings Ends */
+
+header {
+  height: 100px;
+  background-image: linear-gradient(to right, #eacafe, #fff);
+}
+
+.header-container {
+  padding-top: 40px;
+  @include container-width();
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: $dark-color;
+    margin: 15px;
+  }
+
+  .nav-cta {
+    background-color: $main-color;
+    padding: 15px 30px;
+    color: $white-color;
+    border-radius: 10px;
+  }
+
+  .hamburger_icon {
+    display: none;
+  }
+}
+
+/* Header Stylings Ends */
+
+.hero {
+  height: 685px;
+  background-image: linear-gradient(to right, #eacafe, #fff);
+
+  .hero-box {
+    padding-top: 90px;
+    @include container-width();
+    @include grid-system();
+
+    .hero-col-1 {
+      h1 {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 60px;
+        color: $dark-color;
+        margin-bottom: 0.3em;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: $gray-color;
+        margin-bottom: 2em;
+      }
+    }
+
+    .hero-col-2 img {
+      width: 100%;
+    }
+
+    .hero-cta {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      background-color: $main-color;
+      padding: 15px 30px;
+      color: $white-color;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    .hero-img {
+      padding-top: 2em;
+      padding-bottom: 1em;
+    }
+
+    span {
+      color: $sub-main-color;
+      font-weight: 700;
+    }
+  }
+}
+
+/* Hero Stylings Ends */
+
+.curate {
+  height: 400px;
+}
+
+.curate-box {
+  padding-top: 90px;
+  @include container-width();
+  @include grid-system();
+  gap: 100px;
+
+  .curate-col-1 {
+    h2 {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 47px;
+      color: $dark-color;
+      margin-bottom: 0.3em;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: $gray-color;
+      margin-bottom: 0.5em;
+    }
+
+    .curate-cta {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 27px;
+      color: $main-color;
+      text-decoration: none;
+    }
+  }
+
+  .curate-col-2 {
+    .curate-img {
+      width: 80%;
+    }
+  }
+}
+
+/* Curate Stylings Ends */
+
+.access {
+  height: 700px;
+}
+
+.access-box {
+  padding-top: 90px;
+  @include container-width();
+  @include grid-system();
+  gap: 100px;
+
+  .access-col-1 {
+    h2 {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 47px;
+      color: $dark-color;
+      margin-bottom: 0.3em;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: $gray-color;
+      margin-bottom: 0.5em;
+    }
+
+    .access-cta {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 27px;
+      color: $main-color;
+      text-decoration: none;
+    }
+  }
+
+  .access-col-2 {
+    .access-img {
+      width: 80%;
+    }
+  }
+}
+
+/* Access Stylings Ends */
+
+footer {
+  height: 300px;
+  background-color: #eacafe;
+}
+
+.footer-box {
+  padding-top: 100px;
+  @include container-width();
+  max-width: 1100px;
+  @include grid-system();
+  gap: 50px;
+  grid-template-columns: 400px 200px 200px 200px;
+
+  .f-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $dark-color;
+    margin-bottom: 0.3em;
+  }
+
+  .f-col-1 p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #4f4f4f;
+    margin-bottom: 0.5em;
+  }
+
+  .f-col-2 li,
+  .f-col-3 li,
+  .f-col-4 li {
+    list-style-type: none;
+  }
+
+  .f-col-2 a,
+  .f-col-3 a,
+  .f-col-4 a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #4f4f4f;
+    margin-bottom: 0.5em;
+    text-decoration: none;
+  }
+}
