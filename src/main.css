@@ -44,6 +44,7 @@
   }
   .header-container nav ul li a {
     color: whitesmoke;
+    font-size: 25px;
   }
   .header-container .hamburger_icon {
     display: block !important;
