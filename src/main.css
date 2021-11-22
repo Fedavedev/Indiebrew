@@ -29,8 +29,6 @@
     top: 0px;
     text-align: center;
     background-color: #6b6b6b;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
   }
   .header-container nav ul {
     display: -webkit-box;
